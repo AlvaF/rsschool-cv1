@@ -12,16 +12,8 @@
 }
 
 header {
+  height: 30px;
   background-color: #418d9e;
-}
-
-header .navigation {
-  width: 20px;
-}
-
-header .bar {
-  color: black;
-  display: none;
 }
 
 .container {
