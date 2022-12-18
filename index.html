@@ -7,24 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header></header>
     <main class="container">
-        <figure>
-            <img src="/W0euecrAZHpcLcr8M7xRpUJn5cdUXqXrZF0nGR5lQQjc5S5Sb3NaH_ppwuS8g9I8sIYvWfHa.jpg" alt="photo">
-            <article>
-                <h2>Alvina Fedorova</h2>
-                <h1>Junior Frontend Developer</h1>
-                <h3>Contacts:</h3>
-                <ul>
-                    <li>Location: Pattaya, Thailand</li>
-                    <li>Discord: AlvaF</li>
-                    <li> <a href="mailto:Es_@mail.ru">Es_@mail.ru</a></li>
-                </ul>
-            </article>
-        </figure>
+        <img src="/W0euecrAZHpcLcr8M7xRpUJn5cdUXqXrZF0nGR5lQQjc5S5Sb3NaH_ppwuS8g9I8sIYvWfHa.jpg" alt="photo">
+        <article>
+            <h2>Alvina Fedorova</h2>
+            <h1>Junior Frontend Developer</h1>
+            <h3>Contacts:</h3>
+            <ul>
+                <li>Location: Pattaya, Thailand</li>
+                <li>Discord: AlvaF</li>
+                <li> <a href="mailto:Es_@mail.ru">Es_@mail.ru</a></li>
+            </ul>
+        </article>
 
         <article>
             <h3>Hard Skills:</h3>
@@ -53,7 +54,17 @@
             </ul>
         </article>
         <article>
-            Code Example:
+            <h3>
+                Languages:
+            </h3>
+            <ul>
+                <li>English - B1</li>
+                <li>French - A1</li>
+                <li>Russian - Native</li>
+            </ul>
+        </article>
+        <article class="code">
+            <h2>Code Example:</h2>
             <pre><code>addProduct(item){
                 this.getJson(`${API}/addToBasket.json`)
                     .then(data => {
@@ -68,16 +79,6 @@
                         }
                     })
             }</code></pre>
-        </article>
-        <article>
-            <h3>
-                Languages:
-            </h3>
-            <ul>
-                <li>English - B1</li>
-                <li>French - A1</li>
-                <li>Russian - Native</li>
-            </ul>
         </article>
     </main>
     <footer></footer>
