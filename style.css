@@ -1,0 +1,20 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 30px;
+  background-color: #418d9e;
+}
+
+.container {
+  max-width: 80%;
+}
+
+img {
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */
