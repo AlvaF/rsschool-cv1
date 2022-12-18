@@ -4,26 +4,44 @@
     box-sizing: border-box;
 }
 
+.toggle {
+    display: flex;
+}
+
 header {
-    height: 30px;
+    // height: 30px;
     background-color: rgb(65, 141, 158);
+
+    .navigation {
+        width: 20px;
+        // padding-left: 30px;
+    }
+
+    .bar {
+        color: black;
+        display: none;
+    }
+
+
 }
 
 .container {
-    margin-top: 3%;
+    // margin-top: 3%;
     max-width: 70%;
 }
 
 main {
+    margin-top: 3%;
+    width: 100%;
     font-family: Montserrat;
     text-align: start;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
     gap: 20px;
 
     article {
-        width: 300px;
+        width: 400px;
     }
 }
 
@@ -50,7 +68,19 @@ pre {
 }
 
 footer {
-    margin-top: 10%;
-    height: 30px;
-    background-color: rgb(0, 0, 0);
+    margin-top: 20%;
+    background-color: rgb(65, 141, 158);
+    display: flex;
+    align-items: center;
+    padding: 0.5% 0.5%;
+
+    p {
+        font-family: Montserrat;
+
+        a {
+            border: none;
+            text-decoration: none;
+            color: black;
+        }
+    }
 }

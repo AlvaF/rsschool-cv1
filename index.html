@@ -13,9 +13,25 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <figure class="container">
+            <img class="navigation" src="bars-solid.svg" alt="nav-bar">
+            <nav class="bar">
+                <ul>
+                    <li> <a href="https://github.com/AlvaF">My GitHub</a> </li>
+                    <li> <a href="https://rs.school/js/">RSSchool</a> </li>
+                </ul>
+            </nav>
+        </figure>
+    </header>
     <main class="container">
-        <img src="/W0euecrAZHpcLcr8M7xRpUJn5cdUXqXrZF0nGR5lQQjc5S5Sb3NaH_ppwuS8g9I8sIYvWfHa.jpg" alt="photo">
+        <article><img src="W0euecrAZHpcLcr8M7xRpUJn5cdUXqXrZF0nGR5lQQjc5S5Sb3NaH_ppwuS8g9I8sIYvWfHa.jpg" alt="photo">
+        </article>
+        <article>
+            <h2>About me:</h2>
+            <p>I like to study and learn something new. My core strengths are in problem solving and fast learning.I
+                want to get knowledge and skills that will be enough for employment in a company.</p>
+        </article>
         <article>
             <h2>Alvina Fedorova</h2>
             <h1>Junior Frontend Developer</h1>
@@ -81,7 +97,15 @@
             }</code></pre>
         </article>
     </main>
-    <footer></footer>
+    <footer>
+        <p> GitHub : <a href="https://github.com/AlvaF">AlvaF</a></p>
+        <p>2022</p>
+        <a href="https://rs.school/js/"><img src="rs_school_js.svg" alt="logo"></a>
+    </footer>
 </body>
+<script>
+    const bar = document.getElementsByClassName('bar');
+    document.getElementsByClassName('navigation').addEventListener('click', () => { bar.classList.toggle('toggle') });
+</script>
 
 </html>
