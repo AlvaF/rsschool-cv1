@@ -6,18 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Alvina Fedorova</h2>
-    <h3>Junior Frontend Developer</h3>
-    <h3>Contacts:</h3>
-    <ul>
-        <li>Location: Khabarovsk, Russia</li>
-        <li>Discord: AlvaF</li>
-        <li> <a href="mailto:Es_@mail.ru">Es_@mail.ru</a></li>
-        <li> <a href="tg://resolve?domain=<Alvina_f>">Telegram:</a></li>
-    </ul>
+    <main>
+        <h2>Alvina Fedorova</h2>
+        <h1>Junior Frontend Developer</h1>
+        <h3>Contacts:</h3>
+        <ul>
+            <li>Location: Pattaya, Thailand</li>
+            <li>Discord: AlvaF</li>
+            <li> <a href="mailto:Es_@mail.ru">Es_@mail.ru</a></li>
+        </ul>
+        <article>
+            <h3>Hard Skills:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS (SASS, LESS, BEM methodology, Bootstrap)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Git/GitHub</li>
+                <li>Webpack</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Soft Skills:</h3>
+            <ul>
+                <li>Sociability</li>
+                <li>Teamwork skills</li>
+                <li>Punctuality</li>
+                <li>Flexibility in communication</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Cources:</h3>
+            <ul>
+                <li>Frontend Developer ( <a href="https://gb.ru/">GeekBrains</a> )</li>
+                <li>JavaScript/Frontend Developer ( <a href="https://app.rs.school/">RS School</a> )</li>
+            </ul>
+        </article>
+        <article>
+            Code Example:
+            <pre><code>addProduct(item){
+                this.getJson(`${API}/addToBasket.json`)
+                    .then(data => {
+                        if(data.result === 1){
+                           let find = this.cartItems.find(el => el.id_product === item.id_product);
+                           if(find){
+                               find.quantity++;
+                           } else {
+                               const prod = Object.assign({quantity: 1}, item);
+                               this.cartItems.push(prod)
+                           }
+                        }
+                    })
+            }</code></pre>
+        </article>
+        <article>
+            <h3>
+                Languages:
+            </h3>
+            <ul>
+                <li>English - B1</li>
+                <li>French - A1</li>
+                <li>Russian - Native</li>
+            </ul>
+        </article>
+    </main>
 </body>
 
 </html>
