@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://AlvaF.github.io/rsschool-cv/cv
